@@ -97,15 +97,25 @@
 			
 			<section id="contact">    <!-- debut de la section contact -->
 				<h2>CONTACT</h2>
-				<form>
-					<p>Nom et prénom</p>
-					<input type="text">
-					<p>Adresse email</p>
-					<input type="email">
-					<p> Message</p>
-					<textarea id="message" name="message" placeholder="champ obligatoire..." required rows="5" cols="33"></textarea>
-					<button type="submit" >Envoyer</button>
+				<form action="mon-formulaire-de-contact" method="post">
+					<div>
+						<label for="name">Nom et prénom:</label>
+						<input type="text" id="name" name="user_name">
+					</div>
+					<div>
+						<label for="mail">Adresse e-mail :</label>
+						<input type="email" id="mail" name="user_mail">
+					</div>
+					<div>
+						<label for="msg">Message :</label>
+						<textarea id="msg" name="user_message"></textarea>
+					</div>
+					<div class="button">
+						<button type="submit">Envoyer le message</button>
+					</div>
+				
 				</form>
+				
 			</section>      <!-- fin de la section contact -->
 			
 		</main>
