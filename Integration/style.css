@@ -1,5 +1,21 @@
-img:hover
-{
-    opacity: 50%;
-    
+
+/* images opacity hover and border CHALLENGE 3*/
+img:hover{
+	opacity: 50%;
 }
+
+/*.logo:hover {
+	opacity: 100%;
+}*/
+
+img{
+	border-radius: 3px;
+}
+
+/* black and white logo CHALLENGE 3*/
+
+.logo{
+	filter: grayscale(100%);
+		
+}
+
