@@ -16,6 +16,92 @@ img{
 
 .logo{
 	filter: grayscale(100%);
+	width:70%
 		
 }
 
+/* Mise en place menu DEROULANT CHALLENGE 3*/
+
+nav{
+	margin: Opx;
+	padding: 0px;
+	font-family:avenir, sans-serif;
+   
+  }
+  
+  nav ul{
+	list-style-type: none;
+  }
+  
+  nav{
+	width: 100%;
+	margin: 0 auto;
+	position: sticky;
+	top: 0px;
+  }
+  
+  nav li{
+	float: left;
+	width: 25%;
+	text-align: center;
+  }
+  
+  nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  nav a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+  }
+  
+  nav a:hover{
+	color: rgb(41, 151, 229);
+	border-bottom: 2px solid rgb(221, 0, 255);
+  }
+  .subroll{
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+  }
+  
+  nav > ul li:hover .subroll{
+	display: block;
+  }
+  
+  .subroll li{
+	float: none;
+	width: 100%;
+	text-align: center;
+  }
+  
+  .subroll a{
+	padding: 10px;
+	border-bottom: none;
+  }
+  .subroll a:hover{
+	border-bottom: none;
+	background-color: RGBa(200,200,200,0.1);
+  }
+  
+  .roll > a::after{
+	content:" ▼";
+	font-size:12px;
+  }
+  
+  nav ul li{
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 25%;
+  }
+  
+  /* Mise en place menu DEROULANT */
